@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link href="https://fonts.google.com/specimen/Exo" rel="stylesheet">
+
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Survey</title>
+     <style>
+          body {
+               background-color: rgb(168, 226, 207);
+          }
+
+          h1 {
+               font-size: 30px;
+               text-align: center;
+               padding-block-end: 10px;
+          }
+
+          #paper {
+               background-color: rgb(252, 252, 252);
+               width: 75%;
+               height: 1000px;
+               overflow: scroll;
+               margin: 0 auto;
+          }
+
+          .paperTop {
+               text-align: center;
+          }
+               
+               
+     
+
+          a{
+               display: block;
+               margin:10px;
+               width:50%;
+               text-align: right;
+               padding-right;
+               position: absolute;
+               
+          }
+
+          .paperRight{  
+               display: block;
+               margin:10px;
+               text-align: left;
+               padding-left;
+               position: absolute;
+               
+          }
+
+          .button {
+               background-color: rgb(82, 124, 108);
+               color: beige;
+               font-size: 15px;
+               padding: 10px 20px;
+               
+               margin-bottom: 10px;
+               border-radius: 10px;
+               border-width: 0px;
+               margin: 0 auto;
+          }
+     </style>
+</head>
+
+<body>
+     <h1>Survey Form</h1>
+
+     <div id="paper">
+          <div class="paperTop">
+               <h4>Let us know how we can improve freeCodeCamp</h4>
+          </div>
+
+
+          <form>
+              
+               <a><sup>*</sup>Name: </a>
+               <input type="text" name="name" placeholder="Enter your Name" class="paperRight">
+               
+               <br>
+               <br>
+
+               <a><sup>*</sup>Email: </a>
+               <input type="email" name="email" placeholder="Enter your Eamil" class="paperRight">
+               
+               <br>
+               <br>
+               
+               <a><sup>*</sup>Age: </a>
+               <input type="number" name="age" min="12" max="100" class="paperRight">
+               
+               <br>
+               <br>
+
+               <a>Which option best describes your current role?</a>
+               <select name="profession" class="paperRight" >
+                    <!-- <option placeholder="select"></option> -->
+                    <option value="student">Student</option>
+                    <option value="fullTimeJob">Full Time Job</option>
+                    <option value="fullTimeLearner">Full Time Learner</option>
+                    <option value="preferNotToSat">Prefer Not to Say</option>
+                    <option value="other">Other</option>
+               </select>
+               
+               <br>
+               <br>
+               
+               <a><sup>*</sup>How likely is that you would recommend freeCodeCamp to a friend?</a>
+               <input name="recommend" type = "radio" value = "definitely" class="paperRight">Definitely<br>
+               <input name="recommend" type = "radio" value = "maybe" class="paperRight">Maybe<br>
+               <input name="recommend" type = "radio" value = "notSure" class="paperRight">Not sure<br>
+               </label>
+          
+               <br>
+
+               <a>What do you like most in FCC:</a>
+               <select name="likeMost" class="paperRight" >
+                    <!-- <option placeholder="select"></option> -->
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+               </select>
+
+               <br>
+               <br>
+
+               <a>Things that should be improved in the future
+               <br>(Check all that apply):</a>
+               <input name="improvedThings" type = "checkbox" value = "frontendProjects" class="paperRight">Front-end Projects<br>
+               <input name="improvedThings" type = "checkbox" value = "backendProjects" class="paperRight">Back-end Projects<br>
+               <input name="improvedThings" type = "checkbox" value = "dataVisualization" class="paperRight">Data Visualization<br>
+               <input name="improvedThings" type = "checkbox" value = "challenges" class="paperRight">Challenges<br>
+               <input name="improvedThings" type = "checkbox" value = "openSourceCommunity" class="paperRight">Open Source Community<br>
+               <input name="improvedThings" type = "checkbox" value = "gitterHelpRooms" class="paperRight">Gitter help rooms<br>
+               <input name="improvedThings" type = "checkbox" value = "videos" class="paperRight">Videos<br>
+               <input name="improvedThings" type = "checkbox" value = "cityMeetups" class="paperRight">City Meetups<br>
+               <input name="improvedThings" type = "checkbox" value = "wiki" class="paperRight">Wiki<br>
+               <input name="improvedThings" type = "checkbox" value = "forum" class="paperRight">Forum<br>
+               <input name="improvedThings" type = "checkbox" value = "additionalCourses" class="paperRight">Additional Courses<br>
+
+
+               </label>
+          
+               <br>
+               <br>
+
+               <a>Any Comments or Suggestions?</a> 
+               <textarea rows="5" cols="20" name="comment" class="paperRight"></textarea>
+              
+               <br>
+               <br>
+               <br>
+               <input type="submit" value="Submit" class="button">
+          </form>
+
+     </div>
+</body>
+
+</html>
